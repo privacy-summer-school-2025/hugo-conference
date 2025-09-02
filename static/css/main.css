@@ -38,8 +38,6 @@ audio,
 canvas,
 video {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
 }
 audio:not([controls]) {
   display: none;
@@ -169,7 +167,7 @@ fieldset {
 }
 legend {
   border: 0;
-  *margin-left: -7px;
+  /* *margin-left: -7px; */
   padding: 0;
   white-space: normal;
 }
@@ -180,7 +178,6 @@ textarea {
   font-size: 100%;
   margin: 0;
   vertical-align: baseline;
-  *vertical-align: middle;
 }
 button,
 input {
@@ -192,7 +189,7 @@ input[type="reset"],
 input[type="submit"] {
   cursor: pointer;
   -webkit-appearance: button;
-  *overflow: visible;
+  appearance: button;
 }
 button[disabled],
 input[disabled] {
@@ -205,11 +202,10 @@ input[type="radio"] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
-  *width: 13px;
-  *height: 13px;
 }
 input[type="search"] {
   -webkit-appearance: textfield;
+  appearance: textfield;
   -moz-box-sizing: content-box;
   -ms-box-sizing: content-box;
   -webkit-box-sizing: content-box;
@@ -360,7 +356,7 @@ nav {
   padding: 15px 30px;
   font-size: 2em;
   line-height: 1em;
-  vertical-align: center;
+  vertical-align: middle;
   letter-spacing: -0.02em;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -471,7 +467,6 @@ nav {
   width: 150px;
   height: 150px;
   text-align: center;
-  vertical-align: middle;
   line-height: 150px;
 }
 /* =============================================================================
